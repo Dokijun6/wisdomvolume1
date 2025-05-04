@@ -126,12 +126,20 @@ export default function SecurePDFViewer() {
           }}
         >
           <div className="relative w-full h-full">
-            <iframe 
-              src={pdfUrl}
+            <iframe
+ 
+             src={pdfData}
+
+              title="Secure PDF Document Viewer"
+
               className="w-full h-full"
+
               style={{ 
+    
                 pointerEvents: 'none' // Disable user interaction with PDF content
+ 
               }}
+
             />
             {/* Watermark layer */}
             <div className="absolute inset-0 pointer-events-none select-none flex items-center justify-center">
